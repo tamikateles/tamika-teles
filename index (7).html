@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tamika Robinson Teles | Sustainability · Consumer Insight · Ethical Strategy</title>
+<meta name="description" content="International Business student at the University of Groningen combining sustainability, consumer insight, and strategic communication. Available for ESG, consulting, and ethical branding opportunities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --teal: #1B6B6B;
+  --teal-light: #E8F5F5;
+  --teal-mid: #2a8a8a;
+  --gold: #C9A84C;
+  --gold-light: #f5edd8;
+  --off-white: #F7F4EF;
+  --sage: #E8F0EC;
+  --dark: #1A1A2E;
+  --mid: #4a4a5a;
+  --light-text: #7a7a8a;
+  --border: rgba(26,26,46,0.1);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; color: var(--dark); background: #fff; line-height: 1.7; overflow-x: hidden; }
+
+/* ── NAV ── */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  background: rgba(255,255,255,0.95); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 5vw; height: 64px;
+}
+.nav-logo { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--dark); text-decoration: none; letter-spacing: 0.02em; }
+.nav-links { display: flex; gap: 2.5rem; list-style: none; }
+.nav-links a { font-size: 0.85rem; color: var(--mid); text-decoration: none; letter-spacing: 0.05em; text-transform: uppercase; font-weight: 500; transition: color 0.2s; }
+.nav-links a:hover { color: var(--teal); }
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 22px; height: 1.5px; background: var(--dark); transition: all 0.3s; }
+.mobile-menu { display: none; position: fixed; top: 64px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--border); padding: 1.5rem 5vw; z-index: 99; }
+.mobile-menu a { display: block; font-size: 0.9rem; color: var(--mid); text-decoration: none; padding: 0.75rem 0; border-bottom: 1px solid var(--border); letter-spacing: 0.05em; text-transform: uppercase; font-weight: 500; }
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu.open { display: block; }
+
+/* ── SECTIONS ── */
+section { padding: 100px 5vw; }
+.container { max-width: 1100px; margin: 0 auto; }
+.label { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 1rem; display: block; }
+
+/* ── HERO ── */
+#home {
+  min-height: 100vh; background: var(--off-white);
+  display: flex; align-items: center;
+  padding-top: 64px;
+}
+.hero-inner { display: grid; grid-template-columns: 1fr; gap: 80px; align-items: center; max-width: 760px; margin: 0 auto; width: 100%; }
+.hero-kicker { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 1.5rem; }
+.hero-h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.8rem, 5vw, 4.2rem); font-weight: 500; line-height: 1.12; color: var(--dark); margin-bottom: 1.5rem; }
+.hero-h1 em { font-style: italic; color: var(--teal); }
+.hero-sub { font-size: 1.05rem; color: var(--mid); line-height: 1.75; margin-bottom: 2.5rem; max-width: 480px; font-weight: 300; }
+.btn-row { display: flex; gap: 1rem; flex-wrap: wrap; }
+.btn-primary { background: var(--teal); color: #fff; padding: 14px 32px; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; transition: background 0.2s; }
+.btn-primary:hover { background: var(--teal-mid); }
+.btn-outline { border: 1.5px solid var(--teal); color: var(--teal); padding: 14px 32px; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; transition: all 0.2s; }
+.btn-outline:hover { background: var(--teal); color: #fff; }
+
+/* ── BELIEF ── */
+#belief { background: var(--teal); padding: 100px 5vw; }
+.belief-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+.belief-label { font-size: 0.72rem; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.55); font-weight: 500; margin-bottom: 2rem; display: block; }
+.belief-quote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 3vw, 2.4rem); font-weight: 400; font-style: italic; color: #fff; line-height: 1.55; margin-bottom: 1.5rem; }
+.belief-sub { font-size: 0.95rem; color: rgba(255,255,255,0.7); font-weight: 300; }
+
+/* ── PILLARS ── */
+#pillars { background: #fff; }
+.pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-top: 3rem; }
+.pillar { padding: 3rem 2rem; background: var(--off-white); position: relative; }
+.pillar:first-child { background: var(--sage); }
+.pillar-num { font-family: 'Cormorant Garamond', serif; font-size: 3rem; font-weight: 400; color: var(--teal); opacity: 0.3; line-height: 1; margin-bottom: 1rem; }
+.pillar h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; font-weight: 600; color: var(--dark); margin-bottom: 1rem; }
+.pillar p { font-size: 0.92rem; color: var(--mid); line-height: 1.75; font-weight: 300; }
+
+/* ── STATS ── */
+#stats { background: var(--dark); padding: 80px 5vw; }
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: rgba(255,255,255,0.08); max-width: 1100px; margin: 0 auto; }
+.stat-item { background: var(--dark); padding: 3rem 2rem; text-align: center; }
+.stat-num { font-family: 'Cormorant Garamond', serif; font-size: 3.2rem; font-weight: 500; color: var(--gold); line-height: 1; margin-bottom: 0.5rem; }
+.stat-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); letter-spacing: 0.08em; text-transform: uppercase; font-weight: 400; }
+
+/* ── ABOUT ── */
+#about { background: var(--off-white); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+.about-left h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 500; line-height: 1.2; color: var(--dark); margin-bottom: 2rem; }
+.golden-circle { margin: 2.5rem 0; display: grid; grid-template-rows: 1fr 1fr 1fr; gap: 1px; }
+.gc-row { display: flex; gap: 0; align-items: stretch; }
+.gc-label { background: var(--teal); color: #fff; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; padding: 1.5rem 1.2rem; min-width: 70px; display: flex; align-items: center; justify-content: center; }
+.gc-text { background: #fff; padding: 1.5rem 1.5rem; font-size: 0.92rem; color: var(--mid); line-height: 1.7; font-weight: 300; flex: 1; }
+.values-list { margin-top: 2rem; display: flex; flex-direction: column; gap: 1rem; }
+.value-item { display: flex; gap: 1rem; align-items: flex-start; }
+.value-dot { width: 6px; height: 6px; border-radius: 50%; background: var(--gold); margin-top: 10px; flex-shrink: 0; }
+.value-text strong { color: var(--dark); font-weight: 500; }
+.value-text { font-size: 0.92rem; color: var(--mid); line-height: 1.7; font-weight: 300; }
+.about-right { }
+.credentials-block { background: #fff; padding: 2rem; margin-bottom: 1.5rem; }
+.credentials-block h4 { font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 1.2rem; }
+.cred-list { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+.cred-list li { font-size: 0.88rem; color: var(--mid); font-weight: 300; padding-left: 1.2rem; position: relative; }
+.cred-list li::before { content: '—'; position: absolute; left: 0; color: var(--teal); font-size: 0.8rem; }
+.timeline { display: flex; flex-direction: column; gap: 0; }
+.tl-item { display: flex; gap: 1.5rem; padding-bottom: 2rem; position: relative; }
+.tl-item:not(:last-child)::after { content: ''; position: absolute; left: 19px; top: 40px; bottom: 0; width: 1px; background: var(--border); }
+.tl-dot { width: 14px; height: 14px; border-radius: 50%; background: var(--teal); flex-shrink: 0; margin-top: 6px; border: 2px solid #fff; box-shadow: 0 0 0 2px var(--teal); }
+.tl-year { font-size: 0.75rem; color: var(--gold); font-weight: 500; margin-bottom: 0.25rem; letter-spacing: 0.05em; }
+.tl-title { font-size: 0.95rem; font-weight: 500; color: var(--dark); margin-bottom: 0.25rem; }
+.tl-desc { font-size: 0.85rem; color: var(--mid); font-weight: 300; line-height: 1.6; }
+
+/* ── WORK ── */
+#work { background: #fff; }
+.work-intro { max-width: 600px; margin-bottom: 3.5rem; }
+.work-intro p { font-size: 1.05rem; color: var(--mid); font-weight: 300; line-height: 1.75; margin-top: 1rem; }
+.featured-project { background: var(--teal); padding: 3.5rem; margin-bottom: 2px; }
+.featured-project .proj-label { color: rgba(255,255,255,0.6); font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; margin-bottom: 1rem; display: block; }
+.featured-project h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.9rem; font-weight: 500; color: #fff; line-height: 1.25; margin-bottom: 1.25rem; }
+.featured-project p { font-size: 0.95rem; color: rgba(255,255,255,0.8); font-weight: 300; line-height: 1.75; margin-bottom: 1.5rem; max-width: 680px; }
+.tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.tag { font-size: 0.72rem; padding: 4px 12px; border: 1px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.75); border-radius: 2px; letter-spacing: 0.05em; }
+.tag-dark { font-size: 0.72rem; padding: 4px 12px; border: 1px solid var(--border); color: var(--teal); border-radius: 2px; letter-spacing: 0.05em; background: var(--teal-light); }
+.projects-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.proj-card { background: var(--off-white); padding: 2.5rem; transition: background 0.2s; }
+.proj-card:hover { background: var(--sage); }
+.proj-card .proj-label { color: var(--gold); font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 500; margin-bottom: 1rem; display: block; }
+.proj-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 600; color: var(--dark); line-height: 1.3; margin-bottom: 1rem; }
+.proj-card p { font-size: 0.88rem; color: var(--mid); line-height: 1.7; font-weight: 300; margin-bottom: 1.5rem; }
+
+/* ── INSIGHTS ── */
+#insights { background: var(--off-white); }
+.insights-intro { max-width: 560px; margin-bottom: 3.5rem; }
+.insights-intro p { font-size: 1.05rem; color: var(--mid); font-weight: 300; line-height: 1.75; margin-top: 1rem; }
+.insights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.insight-card { background: #fff; padding: 2.5rem; }
+.insight-card .ins-label { font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); font-weight: 500; margin-bottom: 1rem; display: block; }
+.insight-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; font-weight: 600; color: var(--dark); line-height: 1.35; margin-bottom: 1rem; }
+.insight-card p { font-size: 0.87rem; color: var(--mid); line-height: 1.7; font-weight: 300; }
+.linkedin-cta { margin-top: 3.5rem; background: var(--sage); padding: 3rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; flex-wrap: wrap; }
+.linkedin-cta p { font-size: 1.05rem; color: var(--dark); font-weight: 400; max-width: 480px; line-height: 1.6; }
+.linkedin-cta a { background: #0A66C2; color: #fff; padding: 12px 28px; border-radius: 4px; text-decoration: none; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; transition: background 0.2s; }
+.linkedin-cta a:hover { background: #0855a3; }
+
+/* ── CONTACT ── */
+#contact { background: #fff; }
+.contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
+.contact-left h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 3.5vw, 3rem); font-weight: 500; line-height: 1.2; margin-bottom: 1.5rem; }
+.contact-left p { font-size: 1rem; color: var(--mid); line-height: 1.75; font-weight: 300; margin-bottom: 2.5rem; }
+.contact-detail { display: flex; gap: 1rem; align-items: flex-start; margin-bottom: 1.5rem; }
+.contact-detail-icon { width: 40px; height: 40px; background: var(--teal-light); border-radius: 4px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.contact-detail-icon svg { width: 18px; height: 18px; stroke: var(--teal); fill: none; stroke-width: 1.5; }
+.contact-detail-text { font-size: 0.88rem; color: var(--mid); font-weight: 300; }
+.contact-detail-text strong { display: block; font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--dark); font-weight: 500; margin-bottom: 0.25rem; }
+.contact-form { display: flex; flex-direction: column; gap: 1.25rem; }
+.form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+.form-group label { font-size: 0.75rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; color: var(--dark); }
+.form-group input, .form-group select, .form-group textarea { font-family: 'DM Sans', sans-serif; font-size: 0.92rem; color: var(--dark); background: var(--off-white); border: 1px solid var(--border); padding: 12px 16px; border-radius: 2px; outline: none; transition: border-color 0.2s; font-weight: 300; }
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus { border-color: var(--teal); }
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-group select { appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%231A1A2E' fill='none' stroke-width='1.5'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 16px center; }
+.form-submit { background: var(--teal); color: #fff; border: none; padding: 14px 32px; font-family: 'DM Sans', sans-serif; font-size: 0.85rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; border-radius: 4px; cursor: pointer; transition: background 0.2s; align-self: flex-start; }
+.form-submit:hover { background: var(--teal-mid); }
+.form-success { display: none; background: var(--sage); padding: 1rem 1.5rem; border-radius: 4px; font-size: 0.92rem; color: var(--teal); font-weight: 500; margin-top: 0.5rem; }
+
+/* ── CLOSING QUOTE ── */
+#closing { background: var(--dark); padding: 100px 5vw; text-align: center; }
+.closing-inner { max-width: 700px; margin: 0 auto; }
+.closing-inner blockquote { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.5rem, 2.8vw, 2.2rem); font-weight: 400; font-style: italic; color: rgba(255,255,255,0.9); line-height: 1.6; margin-bottom: 2rem; }
+.closing-inner cite { font-size: 0.8rem; color: var(--gold); letter-spacing: 0.1em; text-transform: uppercase; font-style: normal; font-weight: 500; }
+
+/* ── FOOTER ── */
+footer { background: var(--dark); border-top: 1px solid rgba(255,255,255,0.06); padding: 2rem 5vw; display: flex; align-items: center; justify-content: space-between; flex-wrap: gap; gap: 1rem; }
+footer p { font-size: 0.8rem; color: rgba(255,255,255,0.35); font-weight: 300; }
+.footer-links { display: flex; gap: 2rem; }
+.footer-links a { font-size: 0.8rem; color: rgba(255,255,255,0.4); text-decoration: none; transition: color 0.2s; }
+.footer-links a:hover { color: var(--gold); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .hero-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .projects-grid { grid-template-columns: 1fr; }
+  .insights-grid { grid-template-columns: 1fr; }
+  .pillars-grid { grid-template-columns: 1fr; }
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  section { padding: 70px 5vw; }
+  .featured-project { padding: 2.5rem; }
+}
+@media (max-width: 600px) {
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .btn-row { flex-direction: column; }
+  .btn-primary, .btn-outline { text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#home">Tamika Robinson Teles</a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#insights">Insights</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home" onclick="closeMenu()">Home</a>
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#work" onclick="closeMenu()">Work</a>
+  <a href="#insights" onclick="closeMenu()">Insights</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+</div>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-kicker">University of Groningen · GPA 8.15 · UAE · Netherlands · Spain</span>
+      <h1 class="hero-h1">Sustainability.<br><em>Consumer Insight.</em><br>Ethical Strategy.</h1>
+      <p class="hero-sub">I'm Tamika, an International Business student building toward a career where business creates genuine environmental and social impact. Not as a department. As the strategy.</p>
+      <div class="btn-row">
+        <a href="#work" class="btn-primary">View My Work</a>
+        <a href="#contact" class="btn-outline">Let's Connect</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- BELIEF STATEMENT -->
+<section id="belief">
+  <div class="belief-inner">
+    <span class="belief-label">My Why</span>
+    <blockquote class="belief-quote">"I believe businesses have the responsibility to create positive environmental and social impact."</blockquote>
+    <p class="belief-sub">That belief shapes every academic choice, every leadership role, and the career I am building.</p>
+  </div>
+</section>
+
+<!-- PILLARS -->
+<section id="pillars">
+  <div class="container">
+    <span class="label">What I Bring</span>
+    <div class="pillars-grid">
+      <div class="pillar">
+        <div class="pillar-num">01</div>
+        <h3>Consumer Insight</h3>
+        <p>I research how people actually make decisions and how sustainability messaging succeeds or fails at the point of consumer choice. My thesis on AI-generated luxury cues is the proof of that curiosity made rigorous.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">02</div>
+        <h3>Strategic Communication</h3>
+        <p>I translate complex ideas including ESG frameworks, brand values, and research findings into clear, audience-first language. Six years of student representation taught me that communication is not about what you say, but what people understand.</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-num">03</div>
+        <h3>International Perspective</h3>
+        <p>Four countries. Three universities. One consistent thread: business problems look fundamentally different when you have lived inside multiple cultures. That perspective is not on a CV. It is in how I think.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section id="stats">
+  <div class="stats-grid">
+    <div class="stat-item">
+      <div class="stat-num">8.15</div>
+      <div class="stat-label">GPA · University of Groningen</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">38/45</div>
+      <div class="stat-label">IB Score · Top Percentile</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">6 yrs</div>
+      <div class="stat-label">Student Leadership</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">4</div>
+      <div class="stat-label">Countries · International Experience</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-left">
+        <span class="label">About Me</span>
+        <h2>The person behind the brand</h2>
+
+        <div class="golden-circle">
+          <div class="gc-row">
+            <div class="gc-label">Why</div>
+            <div class="gc-text">I believe businesses have a responsibility to create positive environmental and social impact, not just financial returns. This belief has shaped every academic and leadership choice I have made.</div>
+          </div>
+          <div class="gc-row">
+            <div class="gc-label">How</div>
+            <div class="gc-text">By combining consumer insight, sustainability thinking, and strategic communication to translate values into business practices that are both commercially rigorous and genuinely meaningful.</div>
+          </div>
+          <div class="gc-row">
+            <div class="gc-label">What</div>
+            <div class="gc-text">I am a final-year International Business student at the University of Groningen (exchange: UPF Barcelona), with thesis research in consumer behavior and 6+ years of leadership experience, seeking roles in sustainability consulting, ESG strategy, and ethical branding.</div>
+          </div>
+        </div>
+
+        <div class="values-list">
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div class="value-text"><strong>Impact:</strong> I want my work to matter beyond the bottom line. Every project I take seriously is one I believe can contribute to something larger than itself.</div>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div class="value-text"><strong>Authenticity:</strong> I am building credibility honestly, through research, leadership, and lived international experience, toward a career I genuinely believe in.</div>
+          </div>
+          <div class="value-item">
+            <div class="value-dot"></div>
+            <div class="value-text"><strong>Growth:</strong> Moving countries four times before 22 has made discomfort feel like progress. I am drawn to environments that require me to learn and adapt.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <span class="label" style="margin-bottom:1.5rem;">My Journey</span>
+        <div class="timeline">
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <div class="tl-year">2013 – 2022</div>
+              <div class="tl-title">Dubai, UAE · GEMS World Academy</div>
+              <div class="tl-desc">Completed the International Baccalaureate Middle Years Programme (MYP) and spent ten years at GEMS World Academy. Maintained Honor Roll standing throughout my academic journey while holding multiple student leadership positions, including Student Cabinet, Student Voice Representative, Grade Council Representative, and House Representative. Served as Team Captain and was awarded Player of the Year (Netball). Additional achievements include the Duke of Edinburgh Bronze Award, National Honors Society membership, Sheikha Fatima Award nomination, and certification as a Teenage Mental Health First Aider.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <div class="tl-year">2022 – 2023</div>
+              <div class="tl-title">Dubai, UAE · GEMS Dubai American Academy</div>
+              <div class="tl-desc">Graduated with the International Baccalaureate (IB) Diploma, achieving 38/45 points. Served as a Student Voice Representative, contributing to student engagement and communication between students and school leadership. Developed strong analytical, research, and critical thinking skills through the IB curriculum while preparing for an international academic pathway.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <div class="tl-year">2023 – 2026</div>
+              <div class="tl-title">Groningen, Netherlands · University of Groningen</div>
+              <div class="tl-desc">International Business, GPA 8.15. Student Mentor supporting international students through academic integration. KEI Leader, designing and leading orientation experiences for incoming cohorts.</div>
+            </div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div>
+              <div class="tl-year">2026</div>
+              <div class="tl-title">Barcelona, Spain · UPF</div>
+              <div class="tl-desc">Exchange semester at Universitat Pompeu Fabra. Immersed in a new academic and cultural environment, deepening my understanding of European business perspectives and broadening my international outlook.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2.5rem;">
+          <div class="credentials-block">
+            <h4>Academic</h4>
+            <ul class="cred-list">
+              <li>GPA 8.15/10 · University of Groningen</li>
+              <li>IB Diploma 38/45 · GEMS World Academy</li>
+              <li>Honor Roll 2013–2023 (10 consecutive years)</li>
+              <li>National Honors Society Member</li>
+            </ul>
+          </div>
+          <div class="credentials-block">
+            <h4>Leadership</h4>
+            <ul class="cred-list">
+              <li>Student Government 2016–2022 (Cabinet, Voice Rep, Grade Council, House Rep)</li>
+              <li>KEI Leader · University of Groningen</li>
+              <li>University Student Mentor</li>
+              <li>Team Captain & Player of the Year · Netball</li>
+            </ul>
+          </div>
+          <div class="credentials-block">
+            <h4>Certifications</h4>
+            <ul class="cred-list">
+              <li>Teenage Mental Health First Aider · The Lighthouse Dubai</li>
+              <li>PADI Advanced Open Water Diver</li>
+              <li>Duke of Edinburgh Bronze Award</li>
+              <li>Sheikha Fatima Award Nominee</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work">
+  <div class="container">
+    <div class="work-intro">
+      <span class="label">Work & Projects</span>
+      <p>A selection of academic research, strategic projects, and leadership experience. Each one is evidence of how I think, not just what I have done.</p>
+    </div>
+
+    <div class="featured-project">
+      <span class="proj-label">Consumer Research · Undergraduate Thesis 2025–2026</span>
+      <h3>AI-Generated Luxury Cues & Consumer Perception</h3>
+      <p>How do luxury-focused visual cues influence consumer spending decisions, and does AI disclosure change their effectiveness? This thesis examines how exposure to AI-generated luxury and nature cues affects impulsive spending behavior. Using an experimental research design, the project investigates the intersection of consumer psychology, emerging technology, and decision-making, providing insights into how brands can use visual communication to influence consumer behavior in an increasingly AI-driven marketplace.</p>
+      <div class="tags">
+        <span class="tag">Consumer Behavior</span>
+        <span class="tag">Branding</span>
+        <span class="tag">AI & Technology</span>
+        <span class="tag">Research Methods</span>
+        <span class="tag">Luxury Strategy</span>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+      <div class="proj-card">
+        <span class="proj-label">Strategic Marketing · UPF Barcelona 2025–2026</span>
+        <h3>Personal Branding Strategy</h3>
+        <p>A complete personal branding strategy built for a university-level Direct and Digital Marketing course, covering digital identity design, audience analysis, LinkedIn optimization, keyword research, content strategy, and connector mapping. This project is itself a demonstration of the skills it describes.</p>
+        <div class="tags">
+          <span class="tag-dark">Personal Branding</span>
+          <span class="tag-dark">Content Strategy</span>
+          <span class="tag-dark">SEO</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <span class="proj-label">Leadership · 2016–2022</span>
+        <h3>Six Years of Student Governance</h3>
+        <p>From House Representative to Student Cabinet to Student Voice Representative: six continuous years of formal leadership at an international school of 3,000+ students across 100+ nationalities. Sustained advocacy, not a one-year role.</p>
+        <div class="tags">
+          <span class="tag-dark">Leadership</span>
+          <span class="tag-dark">Advocacy</span>
+          <span class="tag-dark">Cross-Cultural</span>
+        </div>
+      </div>
+      <div class="proj-card">
+        <span class="proj-label">Mentoring & Community · 2024–2025</span>
+        <h3>Student Mentor & KEI Leader</h3>
+        <p>Supporting international students navigating a new country, language, and academic system. Designing and leading orientation experiences for incoming cohorts, work that requires empathy and strategic communication in equal measure.</p>
+        <div class="tags">
+          <span class="tag-dark">Mentoring</span>
+          <span class="tag-dark">Team Leadership</span>
+          <span class="tag-dark">Communication</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS -->
+<section id="insights">
+  <div class="container">
+    <div class="insights-intro">
+      <span class="label">Insights</span>
+      <p>Perspectives on sustainability, consumer behavior, and what it means to build a career with purpose.</p>
+    </div>
+
+    <div class="insights-grid">
+      <div class="insight-card">
+        <span class="ins-label">Sustainability & Consumer Behavior</span>
+        <h3>Why Greenwashing Is a Consumer Trust Problem, Not a PR Problem</h3>
+        <p>Most brands treat greenwashing as a communications risk, something to manage when it gets noticed. But the deeper problem is what it does to consumer trust over time. When people stop believing sustainability claims mean anything, the entire market for responsible business shrinks.</p>
+      </div>
+      <div class="insight-card">
+        <span class="ins-label">International Perspective</span>
+        <h3>What Four Countries Taught Me About Consumption and Values</h3>
+        <p>Growing up in Dubai, studying in the Netherlands, a semester in Barcelona: each context has its own relationship with consumption and sustainability. Some differences surprised me. All of them shaped how I think about consumer behavior across cultures.</p>
+      </div>
+      <div class="insight-card">
+        <span class="ins-label">Personal Branding</span>
+        <h3>The Difference Between a Digital CV and a Personal Brand</h3>
+        <p>Most students build a digital version of their CV and call it a personal brand. A personal brand is something different: a consistent point of view, expressed consistently, that makes people trust you before they have met you.</p>
+      </div>
+    </div>
+
+    <div class="linkedin-cta">
+      <p>If you think about sustainability, consumer behavior, or ethical business, connect with me on LinkedIn.</p>
+      <a href="https://www.linkedin.com/in/tamika-robinson-teles-1804a031a/" target="_blank" rel="noopener">Follow on LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-left">
+        <span class="label">Get In Touch</span>
+        <h2>Let's talk.</h2>
+        <p>Whether you are a recruiter, a researcher, a sustainability professional, or simply someone who thinks about business differently, I am always open to a conversation.</p>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 7 10-7"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <strong>Email</strong>
+            tamikateles@gmail.com
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <strong>LinkedIn</strong>
+            linkedin.com/in/tamika-robinson-teles-1804a031a/
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-detail-icon">
+            <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="contact-detail-text">
+            <strong>Currently</strong>
+            Barcelona, Spain · Available internationally
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-right">
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your full name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject">
+              <option value="">Select a topic</option>
+              <option>Opportunities</option>
+              <option>Collaboration</option>
+              <option>Research</option>
+              <option>General</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="What would you like to discuss?" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+          <div class="form-success" id="formSuccess">Thank you. I will be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CLOSING QUOTE -->
+<section id="closing">
+  <div class="closing-inner">
+    <blockquote>"I am always open to conversations about sustainability, strategy, and meaningful work."</blockquote>
+    <cite>Tamika Robinson Teles</cite>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Tamika Robinson Teles · Sustainability · Consumer Insight · Ethical Strategy</p>
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#work">Work</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.linkedin.com/in/tamika-robinson-teles-1804a031a/" target="_blank">LinkedIn</a>
+  </div>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+function closeMenu() {
+  document.getElementById('mobileMenu').classList.remove('open');
+}
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    closeMenu();
+  });
+});
+function handleSubmit(e) {
+  e.preventDefault();
+  const btn = e.target.querySelector('.form-submit');
+  btn.textContent = 'Sending...';
+  btn.disabled = true;
+  setTimeout(() => {
+    e.target.reset();
+    btn.style.display = 'none';
+    document.getElementById('formSuccess').style.display = 'block';
+  }, 1000);
+}
+</script>
+</body>
+</html>
